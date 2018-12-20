@@ -45,26 +45,26 @@ sudo apt-get install --allow-unauthenticated -y -t stretch nodejs
 # Release Notes: https://docs.mulesoft.com/release-notes/studio/anypoint-studio-7.3-with-4.1-update-site-1-runtime-release-notes
 # Downloads: https://www.mulesoft.com/ty/dl/studio-linux
 sudo echo "Downloading Anypoint Studio..."
-#sudo wget -O AnypointStudio.tar.gz -nv -nc https://mule-studio.s3.amazonaws.com/7.3.1-U1/AnypointStudio-for-linux-64bit-7.3.1-201811211926.tar.gz
-#sudo tar xvzf AnypointStudio.tar.gz
-#sudo rm -f AnypointStudio.tar.gz
+sudo wget -O AnypointStudio.tar.gz -nv -nc https://mule-studio.s3.amazonaws.com/7.3.1-U1/AnypointStudio-for-linux-64bit-7.3.1-201811211926.tar.gz
+sudo tar xvzf AnypointStudio.tar.gz
+sudo rm -f AnypointStudio.tar.gz
 
 #Install Postman
 sudo echo "Downloading Postman..."
-#sudo wget --no-check-certificate https://dl.pstmn.io/download/latest/linux64 -O postman.tar.gz
-#sudo tar xvzf postman.tar.gz -C /opt
-#sudo rm -f postman.tar.gz
-#sudo ln -s /opt/Postman/Postman /usr/bin/Postman
+sudo wget --no-check-certificate https://dl.pstmn.io/download/latest/linux64 -O postman.tar.gz
+sudo tar xvzf postman.tar.gz
+sudo rm -f postman.tar.gz
+sudo ln -s /Postman/Postman /usr/bin/Postman
 
 #Install Atom Editor
 sudo echo "Downloading Atom..."
-#sudo wget --no-check-certificate https://atom.io/download/deb -O atom.deb
-#sudo dpkg -i atom.deb
-#sudo rm -f atom.deb
+sudo wget --no-check-certificate https://atom.io/download/deb -O atom.deb
+sudo dpkg -i atom.deb
+sudo rm -f atom.deb
 
 #Install API Workbench extension for ATOM
 sudo echo "Downloading API workbench..."
-#sudo wget --no-check-certificate https://github.com/mulesoft/api-workbench/archive/v0.8.48.tar.gz -O api-workbench.tar.gz
+sudo wget --no-check-certificate https://github.com/mulesoft/api-workbench/archive/v0.8.48.tar.gz -O api-workbench.tar.gz
 #sudo mkdir -p ./sources/atom
 #sudo apm link ./sources/atom
 #sudo tar xvzf api-workbench.tar.gz -C .atom/packages
@@ -84,8 +84,8 @@ cat > /usr/share/applications/postman.desktop <<EOL
 [Desktop Entry]
 Encoding=UTF-8
 Name=Postman
-Exec=postman
-Icon=/opt/Postman/app/resources/app/assets/icon.png
+Exec=Postman
+Icon=/Postman/app/resources/app/assets/icon.png
 Terminal=false
 Type=Application
 Categories=Development;
