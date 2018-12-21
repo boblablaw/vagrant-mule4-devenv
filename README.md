@@ -58,12 +58,12 @@ The software components below are requirements, they are needed.  Other configur
 
 | Item | Spec | Notes |
 | :---: | :---: | --- |
-| RAM (for the VM alone) | 4GB | Based on MuleSoft Release Notes. |   
+| RAM (for the VM alone) | 6GB | Based on MuleSoft Release Notes. |   
 | CPU | 2GHz | Based on MuleSoft Release Notes. |
 | Available Hard Drive | 10GB |  Based on MuleSoft Release Notes. |
 | OS | Windows 10 | Vagrant and VirtualBox supports many other Operating Systems. |   
 
-### 2) Software
+### 2) SoftwareS
 You need to install the following before getting started.  
 
 | Technology | Purpose | Version | Installation Instructions |
@@ -119,13 +119,12 @@ Upon completion you should be presented with a debian login screen.
 ![Debian Login Screen Image](images/debian_login_screen.jpg "Debian Login Screen")
 
 ### 4) Smoke Test the VM
-## Launch MuleSoft's Anypoint Studio
+#### Launch MuleSoft's Anypoint Studio
 
 * From the taskbar, select the Applications menu and click "Programming/AnypointStudio"
 * Select the workspace `/home/vagrant/AnypointStudio/studio-workspace`
 
-
-### 3) Import Test Application into Anypoint Studio
+#### Import Test Application into Anypoint Studio and Run
 
 * Create project via `File -> Import -> Mule project from jar`
 * Select jar file via `/home/vagrant/testApp.jar`  
@@ -143,7 +142,7 @@ Launch a terminal via `System Tools -> LXTerminal`.
 ![Debian Start Terminal Image](images/debian_startterminal_screen.jpg "Debian Start Terminal")
 
 
-## Running MuleSoft's "Hello World" Application
+### Running MuleSoft's "Hello World" Application
 
 The following steps should be performed within the newly created virtual machine.
 
