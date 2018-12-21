@@ -80,6 +80,9 @@ apm install busy-signal
 
 sudo cp -r /root/.atom/packages .atom
 
+sudo wget https://training.mulesoft.com/static/public_downloadables/setup/testApp.jar.zip
+sudo unzip testApp.jar.zip
+
 cat > /usr/share/applications/postman.desktop <<EOL
 [Desktop Entry]
 Encoding=UTF-8

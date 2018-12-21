@@ -119,6 +119,24 @@ Upon completion you should be presented with a debian login screen.
 ![Debian Login Screen Image](images/debian_login_screen.jpg "Debian Login Screen")
 
 ### 4) Smoke Test the VM
+## Launch MuleSoft's Anypoint Studio
+
+* From the taskbar, select the Applications menu and click "Programming/AnypointStudio"
+* Select the workspace `/home/vagrant/AnypointStudio/studio-workspace`
+
+
+### 3) Import Test Application into Anypoint Studio
+
+* Create project via `File -> Import -> Mule project from jar`
+* Select jar file via `/home/vagrant/testApp.jar`  
+* Run the project
+* Open a web client ON GUEST (Chromium or Firefox) and make a request to http://localhost:8081/jms.
+* Verify that the message: "Accounts sent for processing to JMS queue" is returned
+* In a web client, make a request to http://localhost:8081/pop.
+* Verify the endpoint returns accounts from the remote MySQL database setup in the project
+* OPTIONAL: Check that you can access the endpoints via the HOST machine on port 4567.   
+
+### 5) OPTIONAL - Download additional Mulesoft examples
 Login using the credentials `vagrant/vagrant`.  
 Launch a terminal via `System Tools -> LXTerminal`.
 
@@ -161,7 +179,7 @@ Switched to a new branch '4.1'
 
 ![Debian Start Anypoint Studio Image](images/debian_startanypointstudio_screen.jpg "Debian Start Anypoint Studio")
 
-### 3) Import Hello World Application into Anypoint Studio
+### 3) Import Test Application into Anypoint Studio
 
 * Create project via `File -> Import -> Maven-based Mule Project from pom.xml`   
 * Select pom file via `/home/vagrant/anypoint-examples/hello-world/pom.xml`  
