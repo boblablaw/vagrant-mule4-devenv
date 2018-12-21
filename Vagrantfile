@@ -10,7 +10,7 @@ Vagrant.configure("2") do |config|
   config.vm.provider "virtualbox" do |v|
     v.gui = true
     v.name = "mulehost"
-    v.memory = "6144"
+    v.memory = "4096"
     v.cpus = "2"
     v.customize ["modifyvm", :id, "--clipboard", "bidirectional", "--vram", "12"]
   end
