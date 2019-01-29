@@ -11,7 +11,7 @@ Vagrant.configure("2") do |config|
     v.gui = true
     v.name = "mulehost"
     v.memory = "4096"
-    v.cpus = "2"
+    #v.cpus = "2"
     v.customize ["modifyvm", :id, "--clipboard", "bidirectional", "--vram", "12"]
   end
 

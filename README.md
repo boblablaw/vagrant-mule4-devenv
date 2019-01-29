@@ -58,7 +58,7 @@ The software components below are requirements, they are needed.  Other configur
 
 | Item | Spec | Notes |
 | :---: | :---: | --- |
-| RAM (for the VM alone) | 6GB | Based on MuleSoft Release Notes. |   
+| RAM (for the VM alone) | 4GB | Based on MuleSoft Release Notes. |   
 | CPU | 2GHz | Based on MuleSoft Release Notes. |
 | Available Hard Drive | 10GB |  Based on MuleSoft Release Notes. |
 | OS | Windows 10 | Vagrant and VirtualBox supports many other Operating Systems. |   
@@ -88,7 +88,7 @@ Vagrant 2.0.2
 
 From a command prompt:
 ```
-C:\Projects>git clone https://github.com/mbgiord/vagrant-mulesoft-devenv.git
+C:\Projects>git clone https://github.com/boblablaw/vagrant-mulesoft-devenv.git
 ```
 
 ### 3) Create and configure the VM using Vagrant
